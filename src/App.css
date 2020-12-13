@@ -1,38 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.center {
+  text-align: center;
+  display: flexbox;
+  flex-direction: row;
+  align-content: baseline;
+}
+
 .App {
+  align-content: center;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+}
+
+.title {
+  color: limegreen;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.btn-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  width: 180px;
+  height: 40px;
+  margin: 40px;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background-size: 190%;
+  background-image: linear-gradient(to left,#2CBF4F,#00FF30,#00D6FF);
+  color: #fff;
+  font-weight: bold;
+  transition: 0.6s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn:hover {
+  background-position: right;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.empty {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Do Hyeon', sans-serif;
+  padding-top: 50px;
+}
+
+.list-item {
+  display: grid;
+  text-align: center;
+  margin: 20px;
+  /* color: limegreen; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1em;
+  font-family: 'Do Hyeon', sans-serif;  
+  border-radius: 15px;
+  box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px rgb(255, 112, 255),   /* inner left magenta short */
+    inset -20px 0 80px rgb(76, 226, 226),  /* inner right cyan short */
+    inset 20px 0 300px rgb(255, 112, 255),  /* inner left magenta broad */
+    inset -20px 0 300px rgb(76, 226, 226), /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px rgb(255, 112, 255),        /* outer left magenta */
+    10px 0 80px rgb(76, 226, 226);         /* outer right cyan */
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
