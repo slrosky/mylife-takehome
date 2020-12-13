@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Filter Feature Development
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This feature allows a user to see a list of content based on particular categories. Just click the button of the category you want to see and voila! - you've got yourself a little trivia list.
 
 ## Available Scripts
 
